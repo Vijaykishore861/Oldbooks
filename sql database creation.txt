@@ -1,0 +1,26 @@
+create table for decryption and encryption 
+create table User_details
+(
+id int primary key auto_increment,
+email varchar(128),
+user_name  varchar(128),
+user_password varchar(128),
+salt varchar(128),
+is_active boolean ,
+created_on datetime not null,
+created_by varchar(128) not null,
+modify_on datetime
+)
+
+created table for Api books
+create table books
+(
+id int primary key auto_increment,
+book_name varchar(128),
+author_name varchar(128),
+descryption varchar(1000),
+damagePercentage varchar(128)
+created_by varchar(128) not null,
+created_on datetime not null,
+modify_on datetime
+)

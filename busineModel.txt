@@ -1,0 +1,26 @@
+
+
+Business model for login
+
+1 user need to enter email, username,password, re-enter password and press signup to creare the user.
+2 incase email is register it is need to show as mail already in use
+3 Once user created then it should come back to login page ask for the cridentails user name and password  
+4 if the user enter the wrong password for three times the id should not be active
+5 if the user forget the password he can able to change the password by verfiying the email and phonenumber.
+
+
+back-end 
+
+need to create table in the database for id primarykey auto_increment, email varchar(64), user_name varchar(64), user_password varchar(128), is_active : bool, 
+created_on : time_stamp, modify_on: time_stamp.
+
+step 1: need to create database for the application and create the above colums for (SQL database creation)
+step 2: created class encrptionanddecription in config.py for the password. the password should be converted to the salt so that no ones can hack the user.
+step 3: 
+
+
+
+python3 -m uvicorn main:app --port 8002                                                                                              
+
+vijaykishore48@gmail.com
+Vijaysrm@123
